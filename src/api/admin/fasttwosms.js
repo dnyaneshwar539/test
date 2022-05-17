@@ -29,12 +29,12 @@ var request = unirest("POST", "https://www.fast2sms.com/dev/bulkV2");
 route.post("/sendOTP", (req, res) => {
   const OTP = Math.floor(1000 + Math.random() * 9000);
   request.headers({
-    authorization: "N2WvepJ1IZyHP5489z7oKSuMEgnhb3w6BtilsQc0xTLdXYOFUVHv27D68y9btGZEanVKsYXPpmFuB4Ig"
+    authorization: "xbX5gCyPD4JvtZRNa8r0LdSlWeTKwioIfFsAn7u6VEkmjzchHBWcFQ9oN7tUJ2xZARjTynBS1qOsDL5K"
   
   });
 
   request.form({
-    sender_id: "", // Set your own "sender_id"
+    sender_id: "FTWSMS", // Set your own "sender_id"
     message: "Your OTP for Bajaj Loan Rashi App use is :"+OTP, // template id
     language: "english",
     route: "v3", // Transactional Route SMS
